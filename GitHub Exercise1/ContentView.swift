@@ -17,7 +17,9 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
-            Rectangle()
+           Circle()
+                .stroke(lineWidth: 15)
+                .foregroundStyle(.pink)
         }
         .padding()
         .foregroundStyle(.blue)
