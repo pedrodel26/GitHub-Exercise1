@@ -9,27 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "3.circle")
-                .resizable()
-                .scaledToFit()
-            Text("Version 3.0")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-            
-           Circle()
-                .stroke(lineWidth: 15)
-                .foregroundStyle(.yellow)
-            
-            Button(action: {
+        ScrollView() {
+            VStack {
+                Image(systemName: "3.circle")
+                    .resizable()
+                    .scaledToFit()
+                Text("Version 3.0")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
                 
-            }, label: {
-                Text("Click Me")
-            })
+                Circle()
+                    .stroke(lineWidth: 15)
+                    .foregroundStyle(.yellow)
+                
+                Button(action: {
+                    
+                }, label: {
+                    Text("Click Me")
+                })
+            }
+            .padding()
+            .foregroundStyle(.blue)
+           
         }
-        .padding()
-        .foregroundStyle(.blue)
-        .padding(.bottom)
     }
 }
 
