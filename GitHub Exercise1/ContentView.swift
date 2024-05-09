@@ -19,7 +19,7 @@ struct ContentView: View {
             
            Circle()
                 .stroke(lineWidth: 15)
-                .foregroundStyle(.pink)
+                .foregroundStyle(.yellow)
             
             Button(action: {
                 
