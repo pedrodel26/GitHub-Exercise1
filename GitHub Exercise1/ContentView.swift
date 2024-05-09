@@ -20,9 +20,16 @@ struct ContentView: View {
            Circle()
                 .stroke(lineWidth: 15)
                 .foregroundStyle(.pink)
+            
+            Button(action: {
+                
+            }, label: {
+                Text("Click Me")
+            })
         }
         .padding()
         .foregroundStyle(.blue)
+        .padding(.bottom)
     }
 }
 
