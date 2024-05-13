@@ -25,7 +25,9 @@ struct ContentView: View {
                 Button(action: {
                     
                 }, label: {
-                    Text("Click Me")
+                    Text("Aperte aqui!")
+                        .font(.title2)
+                        
                 })
             }
             .padding()
